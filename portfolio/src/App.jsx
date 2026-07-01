@@ -1,11 +1,15 @@
 import "./index.scss";
+import Header from "./components/layout/Header/Header";
+import Hero from "./components/sections/Hero/Hero";
 
 const App = () => {
   return (
-    <div className="app">
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is a simple React application.</p>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 };
 
