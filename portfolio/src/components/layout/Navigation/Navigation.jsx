@@ -1,19 +1,20 @@
+import { NavLink } from "react-router-dom";
 import navigation from "../../../data/navigation";
 import "./Navigation.scss";
 
-const Navigation = ({ menuOpen, activeSection, closeMenu }) => {
+const Navigation = ({ menuOpen, closeMenu }) => {
   return (
     <nav className={`navigation ${menuOpen ? "show" : ""}`}>
       <ul>
         {navigation.map((item) => (
-          <li key={item.id}>
-            <a
-              href={`#${item.id}`}
-              className={activeSection === item.id ? "active" : ""}
+          <li key={item.path}>
+            <NavLink
+              to={item.path}
+              className={({ isActive }) => (isActive ? "active" : "")}
               onClick={closeMenu}
             >
-              {item.lable}
-            </a>
+              {item.label}
+            </NavLink>
           </li>
         ))}
       </ul>

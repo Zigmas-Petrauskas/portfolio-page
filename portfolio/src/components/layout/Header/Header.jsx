@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 import Hamburger from "./Hamburger";
 import useHeader from "./useHeader";
@@ -5,24 +6,19 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import "./Header.scss";
 
 const Header = () => {
-  const { menuOpen, toggleMenu, closeMenu, activeSection, scrolled } =
-    useHeader();
+  const { menuOpen, toggleMenu, closeMenu, scrolled } = useHeader();
 
   const isMobileOrTablet = useMediaQuery("(max-width: 1023px)");
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container header-inner">
-        <a href="#hero" className="logo">
+        <NavLink to="/" className="logo" onClick={closeMenu}>
           &lt;LengvasKodas /&gt;
-        </a>
+        </NavLink>
 
-        <Navigation
-          menuOpen={menuOpen}
-          activeSection={activeSection}
-          closeMenu={closeMenu}
-        />
-        {/* Rodomas tik moile + tablet */}
+        <Navigation menuOpen={menuOpen} closeMenu={closeMenu} />
+
         {isMobileOrTablet && (
           <Hamburger menuOpen={menuOpen} toggleMenu={toggleMenu} />
         )}

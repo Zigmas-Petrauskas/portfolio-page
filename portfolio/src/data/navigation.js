@@ -1,27 +1,27 @@
 const navigation = [
   {
-    id: "hero",
-    lable: "Pradžia",
+    path: "/",
+    label: "",
   },
   {
-    id: "about",
-    lable: "Apie mane",
+    path: "/about",
+    label: "Apie mane",
   },
   {
-    id: "skills",
-    lable: "Įgūdžiai",
+    path: "/skills",
+    label: "Įgūdžiai",
   },
   {
-    id: "portfolio",
-    lable: "Portfolio",
+    path: "/portfolio",
+    label: "Portfolio",
   },
   {
-    id: "services",
-    lable: "Paslaugos",
+    path: "/services",
+    label: "Paslaugos",
   },
   {
-    id: "contact",
-    lable: "Kontaktai",
+    path: "/contact",
+    label: "Kontaktai",
   },
 ];
 

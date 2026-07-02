@@ -9,11 +9,7 @@ const Hero = () => {
     <section className="hero" id="hero">
       <div className="container hero-inner">
         <div className="hero-content">
-          <span>Junior Full Stack Developer</span>
-
-          <h2>
-            Kuriu modernias React aplikacijas
-          </h2>
+          <h2>Kuriu modernias React aplikacijas</h2>
 
           <p>React • JavaScript • Node.js • Express • MariaDB</p>
 

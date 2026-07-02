@@ -1,5 +1,7 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header/Header";
 import Hero from "./components/sections/Hero/Hero";
+import About from "./components/sections/About/About";
 import "./index.scss";
 
 const App = () => {
@@ -7,7 +9,10 @@ const App = () => {
     <>
       <Header />
       <main>
-        <Hero />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </main>
     </>
   );
