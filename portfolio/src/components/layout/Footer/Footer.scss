@@ -1,0 +1,98 @@
+.footer {
+  position: fixed; /* 🔥 PRIDĖTA */
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: var(--surface);
+  padding: 2rem 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  z-index: 1000;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  text-align: center;
+}
+
+/* TEXT */
+.footer-text {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-text span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* LINKS */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--text);
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 768px) {
+  .footer-inner {
+    gap: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 1024px) {
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-links {
+    gap: 2rem;
+  }
+}
+
+/* =========================
+   LARGE
+========================= */
+@media (min-width: 1440px) {
+  .footer {
+    padding: 2rem 0;
+  }
+}
+
+/* =========================
+   1920+
+========================= */
+@media (min-width: 1920px) {
+  .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}

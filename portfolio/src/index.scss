@@ -96,6 +96,7 @@ section {
 
 main {
   animation: fadeIn 0.25s ease;
+  padding-bottom: 80px; /* tiek, kiek footer aukštis */
 }
 
 @keyframes fadeIn {

@@ -3,15 +3,12 @@
   top: 72px;
   left: 0;
   right: 0;
-
   background: var(--surface);
-  padding: 2rem;
-
+  padding: 0.5rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
   pointer-events: none;
-
   transition: 0.3s ease;
   z-index: 999;
 }
