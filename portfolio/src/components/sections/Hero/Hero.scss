@@ -10,19 +10,29 @@
   text-align: center;
 }
 
+.hero-content {
+  max-width: 700px;
+}
+
 .hero-content span {
   color: var(--primary);
   font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .hero h2 {
-  font-size: 2.7rem;
+  font-size: clamp(2.4rem, 4vw, 5.5rem);
+  line-height: 1.1;
   margin: 1rem 0;
 }
 
 .hero p {
   color: var(--muted);
   margin-bottom: 2rem;
+  max-width: 500px;
+  text-align: center;
+  margin-inline: auto;
 }
 
 .hero-btn {
@@ -32,6 +42,11 @@
   color: white;
   border-radius: var(--radius);
   margin: 0.5rem;
+  transition: var(--transition);
+}
+
+.hero-btn:hover {
+  background: var(--primary-hover);
 }
 
 .secondary {
@@ -40,31 +55,31 @@
 }
 
 .hero-code {
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: var(--font-heading);
   color: var(--primary);
   opacity: 0.25;
 }
 
 @media (min-width: 768px) {
-  .hero h2 {
-    font-size: 3.5rem;
+  .hero {
+    padding: 6rem 0;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 
   .hero-content {
-    max-width: 700px;
-  }
-
-  .hero-code {
-    font-size: 12rem;
+    max-width: 850px;
   }
 }
 
@@ -73,21 +88,21 @@
     padding: 8rem 0;
   }
 
-  .hero h2 {
-    font-size: 4.5rem;
+  .hero-content {
+    max-width: 1200px;
   }
 
-  .hero-code {
-    font-size: 15rem;
+  .hero p {
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 1920px) {
-  .hero h2 {
-    font-size: 5.5rem;
+  .hero {
+    padding: 8rem 0;
   }
 
-  .hero-code {
-    font-size: 18rem;
+  .hero h2 {
+    font-size: 3.5rem;
   }
 }

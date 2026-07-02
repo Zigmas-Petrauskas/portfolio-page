@@ -1,27 +1,21 @@
+import navigation from "../../../data/navigation";
 import "./Navigation.scss";
 
-const Navigation = ({ MenuOpen }) => {
+const Navigation = ({ menuOpen, activeSection, closeMenu }) => {
   return (
-    <nav className={`navigation ${MenuOpen ? "show" : ""}`}>
+    <nav className={`navigation ${menuOpen ? "show" : ""}`}>
       <ul>
-        <li>
-          <a href="#hero">Pradžia</a>
-        </li>
-        <li>
-          <a href="#about">Apie</a>
-        </li>
-        <li>
-          <a href="#skills">Įgūdžiai</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#services">Paslaugos</a>
-        </li>
-        <li>
-          <a href="#contact">Kontaktai</a>
-        </li>
+        {navigation.map((item) => (
+          <li key={item.id}>
+            <a
+              href={`#${item.id}`}
+              className={activeSection === item.id ? "active" : ""}
+              onClick={closeMenu}
+            >
+              {item.lable}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
