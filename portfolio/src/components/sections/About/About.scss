@@ -1,5 +1,5 @@
 .about {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: var(--bg);
   color: var(--text);
 }
@@ -8,19 +8,15 @@
 .about-inner {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
 
   align-items: center;
   text-align: center;
 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 1rem;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 .about-header {
   display: flex;
@@ -38,7 +34,6 @@
   font-size: 2rem;
   line-height: 1.2;
   margin: 1rem 0;
-
   max-width: 900px;
 }
 
@@ -47,10 +42,6 @@
   max-width: 750px;
   line-height: 1.6;
 }
-
-/* =========================
-   GOALS GRID
-========================= */
 
 .about-goals {
   width: 100%;
@@ -84,33 +75,6 @@
   line-height: 1.5;
 }
 
-/* =========================
-   BUTTON
-========================= */
-
-.about-btn {
-  padding: 0.9rem 1.3rem;
-  background: var(--primary);
-  color: #fff;
-
-  border: none;
-  border-radius: var(--radius);
-
-  cursor: pointer;
-  width: fit-content;
-
-  transition: var(--transition);
-}
-
-.about-btn:hover {
-  background: var(--primary-hover);
-}
-
-/* =========================
-   MEDIA QUERIES
-========================= */
-
-/* ≥ 768px */
 @media (min-width: 768px) {
   .about {
     padding: 6rem 0;
@@ -125,7 +89,6 @@
   }
 }
 
-/* ≥ 1024px */
 @media (min-width: 1024px) {
   .about {
     padding: 7rem 0;
@@ -144,7 +107,6 @@
   }
 }
 
-/* ≥ 1440px */
 @media (min-width: 1440px) {
   .about {
     padding: 8rem 0;
@@ -163,7 +125,6 @@
   }
 }
 
-/* ≥ 1920px */
 @media (min-width: 1920px) {
   .about {
     padding: 7.5rem 0;
