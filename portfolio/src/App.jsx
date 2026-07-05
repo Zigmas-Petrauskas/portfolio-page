@@ -4,6 +4,7 @@ import Hero from "./components/sections/Hero/Hero";
 import About from "./components/sections/About/About";
 import Skills from "./components/sections/Skills/Skills";
 import Portfolio from "./components/sections/Portfolio/Portfolio";
+import Services from "./components/sections/Services/Services";
 import Footer from "./components/layout/Footer/Footer";
 import "./index.scss";
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </main>
       <Footer />

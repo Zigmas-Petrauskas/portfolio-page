@@ -1,0 +1,157 @@
+.services {
+  padding: 4rem 0;
+
+  .services-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--color-card);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: var(--color-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1.35rem;
+    }
+
+    p {
+      line-height: 1.7;
+      color: var(--color-text);
+    }
+  }
+}
+
+/* ===========================
+   480px
+=========================== */
+
+@media (min-width: 480px) {
+  .services {
+    .service-card {
+      padding: 2.25rem;
+    }
+  }
+}
+
+/* ===========================
+   768px
+=========================== */
+
+@media (min-width: 768px) {
+  .services {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-card:last-child {
+      grid-column: span 2;
+      max-width: 420px;
+      justify-self: center;
+    }
+  }
+}
+
+/* ===========================
+   1024px
+=========================== */
+
+@media (min-width: 1024px) {
+  .services {
+    padding: 6rem 0;
+
+    .services-inner {
+      gap: 3rem;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-card:last-child {
+      grid-column: auto;
+      max-width: unset;
+    }
+
+    .service-card {
+      padding: 2.5rem;
+    }
+  }
+}
+
+/* ===========================
+   1440px
+=========================== */
+
+@media (min-width: 1440px) {
+  .services {
+    .services-grid {
+      gap: 2rem;
+    }
+
+    .service-card {
+      padding: 3rem;
+
+      .service-icon {
+        font-size: 3.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+    }
+  }
+}
+
+/* ===========================
+   1920px
+=========================== */
+
+@media (min-width: 1920px) {
+  .services {
+    .service-card {
+      padding: 3.5rem;
+
+      .service-icon {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
