@@ -9,39 +9,23 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
   align-items: center;
   text-align: center;
-
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.about-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-header span {
-  color: var(--primary);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.about-header h2 {
-  font-size: 2rem;
-  line-height: 1.2;
-  margin: 1rem 0;
-  max-width: 900px;
-}
-
-.about-header p {
+/* tekstas po SectionTitle */
+.about-description {
   color: var(--muted);
   max-width: 750px;
   line-height: 1.6;
 }
+
+/* =========================
+   GOALS GRID
+========================= */
 
 .about-goals {
   width: 100%;
@@ -75,13 +59,13 @@
   line-height: 1.5;
 }
 
+/* =========================
+   768px (tablet)
+========================= */
+
 @media (min-width: 768px) {
   .about {
     padding: 6rem 0;
-  }
-
-  .about-header h2 {
-    font-size: 2.4rem;
   }
 
   .about-goals {
@@ -89,17 +73,13 @@
   }
 }
 
+/* =========================
+   1024px (laptop)
+========================= */
+
 @media (min-width: 1024px) {
   .about {
     padding: 7rem 0;
-  }
-
-  .about-header h2 {
-    font-size: 2.8rem;
-  }
-
-  .about-header p {
-    font-size: 1.05rem;
   }
 
   .about-goals {
@@ -107,17 +87,13 @@
   }
 }
 
+/* =========================
+   1440px (large screens)
+========================= */
+
 @media (min-width: 1440px) {
   .about {
     padding: 8rem 0;
-  }
-
-  .about-header h2 {
-    font-size: 3.2rem;
-  }
-
-  .about-header p {
-    font-size: 1.1rem;
   }
 
   .about-inner {
@@ -125,17 +101,13 @@
   }
 }
 
+/* =========================
+   1920px+
+========================= */
+
 @media (min-width: 1920px) {
   .about {
     padding: 7.5rem 0;
-  }
-
-  .about-header h2 {
-    font-size: 3.6rem;
-  }
-
-  .about-header p {
-    font-size: 1.15rem;
   }
 
   .about-inner {
