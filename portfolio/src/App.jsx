@@ -5,6 +5,7 @@ import About from "./components/sections/About/About";
 import Skills from "./components/sections/Skills/Skills";
 import Portfolio from "./components/sections/Portfolio/Portfolio";
 import Services from "./components/sections/Services/Services";
+import Contact from "./components/sections/Contacts/Contact";
 import Footer from "./components/layout/Footer/Footer";
 import "./index.scss";
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />
