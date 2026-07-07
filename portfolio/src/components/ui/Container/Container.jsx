@@ -1,7 +1,7 @@
 import "./Container.scss";
 
-const Container = ({ children }) => {
-  return <div className="container-ui">{children}</div>;
+const Container = ({ children, className = "" }) => {
+  return <div className={`container-ui ${className}`}>{children}</div>;
 };
 
 export default Container;

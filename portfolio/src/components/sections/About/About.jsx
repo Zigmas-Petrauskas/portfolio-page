@@ -1,5 +1,6 @@
 import AboutGoals from "./AboutGoals";
 import useAbout from "./useAbout";
+import Container from "../../ui/Container/Container";
 import SectionTitle from "../../ui/SectionTitle/SectionTitle";
 import "./About.scss";
 
@@ -8,7 +9,7 @@ const About = () => {
 
   return (
     <section className="about" id="about">
-      <div className="container about-inner">
+      <Container className="about-inner">
         <SectionTitle
           // subtitle="Apie mane"
           title="Junior Full Stack programuotojas"
@@ -21,7 +22,7 @@ const About = () => {
         </p>
 
         <AboutGoals />
-      </div>
+      </Container>
     </section>
   );
 };

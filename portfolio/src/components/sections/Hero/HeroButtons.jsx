@@ -1,13 +1,15 @@
+import Button from "../../ui/Button/Button";
+
 const HeroButtons = () => {
   return (
-    <>
-      <a href="#portfolio" className="hero-btn">
+    <div className="hero-buttons">
+      <Button href="/portfolio" className="hero-btn">
         Portfolio
-      </a>
-      <a href="#contact" className="hero-btn secondary">
+      </Button>
+      <Button href="/contact" className="hero-btn secondary">
         Susisiekti
-      </a>
-    </>
+      </Button>
+    </div>
   );
 };
 
