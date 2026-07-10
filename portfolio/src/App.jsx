@@ -7,6 +7,9 @@ import Portfolio from "./components/sections/Portfolio/Portfolio";
 import Services from "./components/sections/Services/Services";
 import Contact from "./components/sections/Contacts/Contact";
 import Footer from "./components/layout/Footer/Footer";
+
+import AccountingRoutes from "./accounting/routes";
+
 import "./index.scss";
 
 const App = () => {
@@ -21,6 +24,8 @@ const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+
+          {AccountingRoutes}
         </Routes>
       </main>
       <Footer />
