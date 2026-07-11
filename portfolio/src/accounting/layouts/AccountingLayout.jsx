@@ -13,11 +13,11 @@ const AccountingLayout = () => {
 
       <div className="accounting-body">
         <Sidebar />
-      </div>
 
-      <main className="accounting-content">
-        <Outlet />
-      </main>
+        <main className="accounting-content">
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 };
